@@ -1,0 +1,36 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Mali:200,300,400,500,600,700|Sansita:400,700,800,900&display=swap');
+
+/* Normalize CSS */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* ... (existing normalize.css styles) ... */
+
+/* Custom Styles */
+:root {
+    --primary: rgb(252, 177, 4);
+    --secondary: rgb(143, 40, 4);
+    --color3: rgb(252, 236, 154);
+    --color4: rgb(132, 84, 76);
+    --white: white;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Mali', sans-serif;
+    background-color: var(--dark);
+    z-index: 0;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Background animation for body */
+@keyframes backgroundAnimation {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 0%;
+    }
+}

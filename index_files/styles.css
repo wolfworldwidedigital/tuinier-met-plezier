@@ -1,0 +1,161 @@
+/* Reset margins and paddings for common elements */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply basic styles to the body */
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Ocean-inspired dark gradient */
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #f1f2f6; /* Light text for high contrast */
+}
+
+/* Navigation styles */
+nav a {
+    color: #f1f2f6;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out; /* Smooth transformation on hover */
+}
+
+nav a:hover {
+    transform: scale(1.1); /* Scale up links on hover */
+}
+
+/* Main container styles */
+.wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #112f41; /* Darker container background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); /* Highlighted shadow on hover */
+}
+
+/* Showcase section styles */
+.showcase {
+    background-image: url(../index_files/hero-image.jpg)!important;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    text-align: center;
+    padding: 280px 0; /* Slightly reduced padding */
+    margin: 20px; /* Margin around the hero section */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+    position: relative; /* Required for pseudo-element */
+    overflow: hidden; /* To ensure shadow doesn't spill outside border radius */
+}
+
+/* Pseudo-element for additional 3D effect */
+.showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for depth */
+    box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.7); /* Inner shadow for more depth */
+    border-radius: 10px; /* Same radius as hero */
+    z-index: -1; /* Places the shadow behind the content */
+}
+
+/* Article section styles */
+article {
+    margin-bottom: 20px;
+}
+
+/* Heading 1 styles */
+h1 {
+    font-size: 36px;
+    color: #f1f2f6;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #16a085; /* Bright color change on hover */
+}
+
+/* Heading 2 styles */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    background-color: #123456; /* Dark background for subheadings */
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    color: #f1f2f6;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h2:hover {
+    background-color: #0a3d62; /* Slightly lighter background on hover */
+}
+
+/* Paragraph description styles */
+p.description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ced6e0;
+    transition: color 0.3s ease-in-out;
+}
+
+p.description:hover {
+    color: #a4b0be; /* Lighter color on hover */
+}
+
+/* Unordered list styles */
+ul {
+    list-style-type: circle; /* Slight change for visual interest */
+    padding: 0;
+}
+
+/* List item styles */
+li {
+    margin-bottom: 5px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+li:hover {
+    margin-left: 10px; /* Move list items on hover */
+}
+
+/* Anchor styles */
+a {
+    color: #00a8ff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for anchor */
+a:hover {
+    color: #0097e6;
+    text-decoration: underline; /* Underline and color shift on hover */
+}
+
+/* Background animation for body */
+body {
+    animation: bodyWave 10s infinite alternate;
+}
+
+/* Keyframes for background animation */
+@keyframes bodyWave {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
